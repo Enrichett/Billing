@@ -4,15 +4,10 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.view.Gravity;
-<<<<<<< HEAD
-import android.view.Window;
-import android.view.WindowManager;
-=======
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
->>>>>>> 學長萬歲
 import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -22,8 +17,6 @@ public class Page2 extends Activity {
     private TextView tvTime;
     private TextView tvComputer;
 
-<<<<<<< HEAD
-=======
     //region 計算機按鈕宣告
 
     private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnD, btn_E, btn_X, btn_P, btn_L, btnF, btnDel, btnPay, btnIn,btnEq;
@@ -35,7 +28,6 @@ public class Page2 extends Activity {
 
     //endregion
 
->>>>>>> 學長萬歲
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,24 +36,13 @@ public class Page2 extends Activity {
         findView();
 
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd");
-<<<<<<< HEAD
-        Date curDate = new Date(System.currentTimeMillis()) ; // 獲取當前時間
-=======
         Date curDate = new Date(System.currentTimeMillis()); // 獲取當前時間
->>>>>>> 學長萬歲
         String str = formatter.format(curDate);
         tvTime.setText(str);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page2);
 
-<<<<<<< HEAD
-        Dialog dialog = new Dialog(this);
-
-        dialog.setContentView(R.layout.activity_page3);
-
-        dialog.setTitle("Custom Dialog");
-=======
 
         Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.activity_page3);
@@ -71,7 +52,6 @@ public class Page2 extends Activity {
 
 
         // dialog.setTitle("Custom Dialog");
->>>>>>> 學長萬歲
 
         Window dialogWindow = dialog.getWindow();
         WindowManager.LayoutParams lp = dialogWindow.getAttributes();
@@ -85,19 +65,6 @@ public class Page2 extends Activity {
 
         dialogWindow.setAttributes(lp);
         dialog.show();
-<<<<<<< HEAD
-
-
-    }
-    //region findView動作(固定)
-    private void findView(){
-        tvTime = (TextView)findViewById(R.id.tvTime);
-        tvComputer = (TextView)findViewById(R.id.tvComputer);
-    }
-    //endregion
-}
-
-=======
         dialog.dismiss();
 
 
@@ -284,4 +251,3 @@ public class Page2 extends Activity {
 
     //endregion
 }
->>>>>>> 學長萬歲
