@@ -53,6 +53,10 @@ public class MainActivity extends Activity {
                     intent.setClass(MainActivity.this  , Page2.class);
                     startActivity(intent);
                     break;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 學長萬歲
             }
         }
 

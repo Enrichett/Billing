@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Page2" />
+<<<<<<< HEAD
         <activity android:name=".Page3"></activity>
+=======
+>>>>>>> 學長萬歲
     </application>
 
 </manifest>
