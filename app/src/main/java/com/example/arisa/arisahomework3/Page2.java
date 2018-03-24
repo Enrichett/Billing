@@ -22,7 +22,7 @@ public class Page2 extends Activity {
     private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnD, btn_E, btn_X, btn_P, btn_L, btnF, btnDel, btnPay, btnIn,btnEq;
     private TextView tvSym, tvNum;//全域變數
     private double n1;
-
+    private Dialog dialog;
 
 
 
@@ -44,7 +44,7 @@ public class Page2 extends Activity {
         setContentView(R.layout.activity_page2);
 
 
-        Dialog dialog = new Dialog(this);
+        dialog = new Dialog(this);
         dialog.setContentView(R.layout.activity_page3);
 
         findView1();
@@ -80,29 +80,29 @@ public class Page2 extends Activity {
 
     //region findView1動作(計算機)
     private void findView1() {
-        btn1 = (Button) findViewById(R.id.btn1);
-        btn2 = (Button) findViewById(R.id.btn2);
-        btn3 = (Button) findViewById(R.id.btn3);
-        btn4 = (Button) findViewById(R.id.btn4);
-        btn5 = (Button) findViewById(R.id.btn5);
-        btn6 = (Button) findViewById(R.id.btn6);
-        btn7 = (Button) findViewById(R.id.btn7);
-        btn8 = (Button) findViewById(R.id.btn8);
-        btn9 = (Button) findViewById(R.id.btn9);
-        btn0 = (Button) findViewById(R.id.btn0);
-        btnD = (Button) findViewById(R.id.btnD);
-        btnEq = (Button) findViewById(R.id.btnEq);
-        btn_E = (Button) findViewById(R.id.btn_E); // 除
-        btn_X = (Button) findViewById(R.id.btn_X); // 乘
-        btn_P = (Button) findViewById(R.id.btn_P); // 加
-        btn_L = (Button) findViewById(R.id.btn_L); // 減
-        btnF = (Button) findViewById(R.id.btnF);   // 完成
-        btnDel = (Button) findViewById(R.id.btnDel); // 刪除
-        btnPay = (Button) findViewById(R.id.btnPay); // 支出
-        btnIn = (Button) findViewById(R.id.btnIn);   // 收入
-        tvSym = (TextView) findViewById(R.id.tvSym); // 符號顯示
-        tvNum = (TextView) findViewById(R.id.tvNum); // 顯示數字
-        btnEq = (Button) findViewById(R.id.btnEq);//等於
+        btn1 = (Button) dialog.findViewById(R.id.btn1);
+        btn2 = (Button) dialog.findViewById(R.id.btn2);
+        btn3 = (Button) dialog.findViewById(R.id.btn3);
+        btn4 = (Button) dialog.findViewById(R.id.btn4);
+        btn5 = (Button) dialog.findViewById(R.id.btn5);
+        btn6 = (Button) dialog.findViewById(R.id.btn6);
+        btn7 = (Button) dialog.findViewById(R.id.btn7);
+        btn8 = (Button) dialog.findViewById(R.id.btn8);
+        btn9 = (Button) dialog.findViewById(R.id.btn9);
+        btn0 = (Button) dialog.findViewById(R.id.btn0);
+        btnD = (Button) dialog.findViewById(R.id.btnD);
+        btnEq = (Button) dialog.findViewById(R.id.btnEq);
+        btn_E = (Button) dialog.findViewById(R.id.btn_E); // 除
+        btn_X = (Button) dialog.findViewById(R.id.btn_X); // 乘
+        btn_P = (Button) dialog.findViewById(R.id.btn_P); // 加
+        btn_L = (Button) dialog.findViewById(R.id.btn_L); // 減
+        btnF = (Button) dialog.findViewById(R.id.btnF);   // 完成
+        btnDel = (Button) dialog.findViewById(R.id.btnDel); // 刪除
+        btnPay = (Button) dialog.findViewById(R.id.btnPay); // 支出
+        btnIn = (Button) dialog.findViewById(R.id.btnIn);   // 收入
+        tvSym = (TextView) dialog.findViewById(R.id.tvSym); // 符號顯示
+        tvNum = (TextView) dialog.findViewById(R.id.tvNum); // 顯示數字
+        btnEq = (Button) dialog.findViewById(R.id.btnEq);//等於
 
 
 
